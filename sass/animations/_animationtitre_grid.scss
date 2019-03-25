@@ -1,0 +1,36 @@
+.titre_anim{
+    animation: titre_animIN .5s both;
+   /* animation: titre_animOUT .5s both;*/
+
+}
+
+.titre_animOUT{
+    animation: titre_animOUT .5s both;
+
+}
+
+
+@keyframes titre_animIN {
+    from {
+        transform: translateY(15vh) scale(1);
+    }
+    
+    to {
+
+        transform: translateY(0vh) scale(1);
+    }
+
+}
+
+@keyframes titre_animOUT {
+    from {
+        transform: translateY(0vh) scale(1);
+    }
+    
+    to {
+
+        transform: translateY(15vh) scale(1);
+        
+    }
+
+}

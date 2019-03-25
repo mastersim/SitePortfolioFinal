@@ -1,0 +1,109 @@
+
+header > p {
+    font-family: 'Fjalla One', sans-serif;
+    color: $color__typotitres;
+}
+
+header > p:hover {
+    cursor: pointer;
+}
+
+.titre_grid{
+    font-family: 'Fjalla One', sans-serif;
+    color: $color__typotitres;
+}
+
+.textebio{
+    display:flex;
+    align-items:center;
+    text-align:justify;
+    margin: 0;
+    font-size: 150%;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+footer{
+    color: $color__typofooter;
+}
+
+footer  p 
+{
+    width:100%;
+    margin: 0;
+    font-size: 90%;
+    text-align: center;
+    margin: 1%;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+footer>div>a{
+    width:100%;
+    margin: 0;
+    font-size: 100%;
+    text-align: center;
+    margin: 1%;
+    font-family: 'Roboto Condensed', sans-serif;
+    color:$color__typofooter;
+}
+
+footer>div>a:hover{
+    color: white; 
+}
+
+
+//Tablette
+@media screen and (max-width: 1024px) {
+
+    .textebio{
+        font-size: 110%;
+        
+    }
+
+    footer  p 
+    {
+        width:100%;
+        margin: 0;
+        font-size: 100%;
+        text-align: center;
+        margin: 3%;
+    }
+
+    .containerbio {
+        height: 50vh;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 568px) {
+
+    .burger-item{
+        color: $color__typotitres;
+        padding: 10%;
+        text-align: left;
+        font-size: 5vw;
+        font-family: 'Fjalla One', sans-serif;
+        padding: 10%;
+        width: 100%;
+        text-decoration: none;
+        border-bottom: 1px solid white;
+              
+      transition: color 0.3s ease;
+    }
+
+    footer  p 
+    {
+        width:100%;
+        margin: 0;
+        font-size: 100%;
+        text-align: center;
+        margin: 3%;
+
+    }
+    
+    .textebio{
+        font-size: 105%;
+
+    }
+}

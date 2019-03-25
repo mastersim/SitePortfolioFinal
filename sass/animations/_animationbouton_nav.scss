@@ -1,0 +1,13 @@
+.elm_nav:hover{
+    animation: couleurBouton 1s infinite;   
+}
+
+@keyframes couleurBouton {
+from{
+color: rgb(235, 235, 235);
+}
+
+to {
+    color:orange;
+}
+}

@@ -1,0 +1,130 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+
+    <title>Landreville Portfolio</title>
+    <meta name="description" content="Portoflio Simon Landreville">
+    <meta name="author" content="Simon Landreville">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript"> <!--À MODIFER-->
+
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- font-family: 'Fjalla One', sans-serif; -->
+
+
+    </head>
+
+    <body>
+        <div class="global">
+            <!--Possiblité de rajouter un header avec des liens pour scroller dans page-->
+            <header>
+                <p class="elm_nav">Accueil</p>
+                <p class="elm_nav">Galerie</p>
+                <p class="elm_nav">À Propos</p>
+                <p class="elm_nav">Contact</p>
+            </header>
+
+            <!--Section menu Burger-->
+            <nav class="navigation">
+                <div id=menuToggle>
+                    <input type="checkbox" id="chkBoutonBurger" />
+
+                    <!--Span pour faire le menu burger-->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <ul id='menu'>
+                        <a href="#" class="burger-item">Accueil</a>
+                        <a href="#"  class="burger-item">Galerie</a>
+                        <a href="#"  class="burger-item">À propos</a>
+                        <a href="#"  class="burger-item">Contact</a>
+                    </ul>
+                </div>
+            </nav> <!-- fin menu -->
+        
+            <!--Header avec demo-reel dedans-->
+            <div class="video">
+                <video loop muted autoplay>
+                            <source src="medias\videos\Demo_Reel.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas la lecture en boucle.
+                    </video>
+            </div>
+            <!--Div avec oeuvres dedans-->
+            <div class="galerie">
+                <div class="grid-item">
+                    <img class="img_grid" src="img\android1.jpg" alt="andro">
+                    <h2 class="titre_grid">Android-01</h2>
+                </div>
+                <div class="grid-item">
+                    <img class="img_grid" src="img\cyberknight.jpg" alt="andro">
+                    <h2 class="titre_grid">Cyber-Knight</h2>
+                </div>
+                <div class="grid-item">
+                    <img class="img_grid" src="img\pilot.jpg" alt="andro">
+                    <h2 class="titre_grid">Mysterious Pilot</h2>
+                </div>  
+                <div class="grid-item">
+                    <img class="img_grid" src="img\troy.jpg" alt="andro">
+                    <h2 class="titre_grid">T.R.O.Y</h2>
+                </div>
+                <div class="grid-item">
+                    <img class="img_grid" src="img\skyburners.jpg" alt="andro">
+                    <h2 class="titre_grid" >Skyburners</h2>
+                </div>
+                <div class="grid-item">
+                    <img class="img_grid" src="img\steamcore.jpg" alt="andro">
+                    <h2 class="titre_grid">SteamCore</h2>
+                </div>  
+                <div class="grid-item">
+                    <img class="img_grid" src="img\vulture.png" alt="andro">
+                    <h2 class="titre_grid">Vautour</h2>
+                </div> 
+                <div class="grid-item">
+                    <img class="img_grid" src="img\dark.png" alt="andro">
+                    <h2 class="titre_grid">Darkbeing</h2>
+                </div> 
+                <div class="grid-item">
+                    <img class="img_grid" src="img\roddyn.png" alt="andro">
+                    <h2 class="titre_grid">Roddyn</h2>
+                </div> 
+            </div>
+
+            <!--Div avec bio dedans-->
+            <div class="bio">
+                <div class="containerbio">
+                    <img class="imgbio" src="img\me.jpg" alt="moi.jpg">
+                </div>
+                <div class="containerbio">
+                    <p class = "textebio">
+                        Étudiant à temps plein au Collège de Maisonneuve et passionné de films et de dessin, mon rêve plus tard est de travailler sur de grosses productions cinématographiques. 
+                        En attendant, j'aime passer mon temps à développer mes habiletés et mordre dans la vie à pleines dents.
+                    </p>
+                </div>
+
+            </div>
+            <!--Footer avec liens contact dedans-->
+            <footer>
+                <div>
+                    <p>simon.landreville@outlook.com</p>
+                    <a href="https://www.artstation.com/hotvoltage/">Artstation</a>
+                    <a href="https://www.linkedin.com/in/simon-landreville-833134113/">Linkedin</a>
+                </div>
+
+                <div>
+                    <p>©2019 Simon Landreville - Tous droits réservés</p>
+                </div>
+            </footer>
+        </div>
+    <script src="js/scripts_base.js"></script>
+    <script type='module' src='./js/application.js'></script>
+    </body>
+</html>
